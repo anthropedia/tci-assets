@@ -1,0 +1,1 @@
+javascript:data.answers=Array(data.questions.length).fill().map(e=>Math.round(Math.random()*4)+1);data.times=Array(data.questions.length).fill().map(e=>Math.round(Math.random()*1000));step(index=data.questions.length);
