@@ -36,6 +36,27 @@ a {
   text-decoration: none;
 }
 
+header {
+  position: relative;
+}
+
+header > section {
+  position: absolute;
+  bottom: -75px;
+  right: 20px;
+}
+
+header > section > a {
+  font-weight: bold;
+  font-size: .9em;
+  color: inherit;
+  background: #eee;
+  padding: 5px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 2px #ccc;
+}
+
 header h1,
 header h2 {
   color: #000;
@@ -60,4 +81,35 @@ main {
 ul {
   margin: 0;
   padding: 0;
+}
+
+
+label {
+  display: inline-block;
+  width: 8%;
+  margin-bottom: .8em;
+}
+input:not([type=submit]) {
+  display: inline-block;
+  margin: 0 55% 0 5%;
+  font-size: .9em;
+  border: 1px solid #999;
+  padding: 5px 10px;
+  border-radius: 5px;
+  width: 30%;
+  transition: .3s box-shadow;
+}
+
+input:not([type=submit]):focus {
+  box-shadow: 0 0 2px solid #999;
+}
+
+button,
+input[type=submit] {
+  display: inline-block;
+  font-size: inherit;
+  padding: .2em 1em;
+  border: 1px solid #999;
+  font-weight: bold;
+  border-radius: 3px;
 }
