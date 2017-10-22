@@ -85,33 +85,50 @@ ul {
   padding: 0;
 }
 
-
-label {
-  display: inline-block;
-  width: 8%;
-  margin-bottom: .8em;
+form {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 1rem;
 }
-input:not([type=submit]) {
-  display: inline-block;
-  margin: 0 55% 0 5%;
+
+form input:not([type=submit]),
+form textarea {
+  font: inherit;
   font-size: .9em;
   border: 1px solid #999;
-  padding: 5px 10px;
-  border-radius: 5px;
-  width: 30%;
+  padding: .2rem .5rem;
+  border-radius: .2rem;
   transition: .3s box-shadow;
 }
 
-input:not([type=submit]):focus {
+form input:not([type=submit]):focus,
+form textarea:focus {
   box-shadow: 0 0 2px solid #999;
 }
 
+form input[type=submit] {
+  grid-column-start: 2;
+}
+
+
 button,
+.button,
 input[type=submit] {
+  font: inherit;
+  cursor: pointer;
   display: inline-block;
-  font-size: inherit;
-  padding: .2em 1em;
-  border: 1px solid #999;
-  font-weight: bold;
-  border-radius: 3px;
+  padding: .3rem .5rem;
+  border: .2rem solid #0275d8;
+  border-radius: .2rem;
+  background-color: #0275d8;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+button:hover,
+.button:hover,
+input[type=submit]:hover {
+  background-color: #025aa5;
+  border-color: #01549b;
 }
