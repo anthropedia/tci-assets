@@ -16,7 +16,6 @@ body {
   font-size: 18px;
   line-height: 1.6;
   background-color: #f6f6f6;
-  margin: 2em auto 1em auto;
   color: #333;
 }
 html::after {
@@ -36,8 +35,11 @@ a {
 }
 
 header {
-  position: relative;
-  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: [logo] 2fr [menu] 1fr;
+  width: 960px;
+  margin: 0 auto;
+  align-content: center;
 }
 
 header > section {
@@ -76,7 +78,6 @@ main {
   border: 1px solid #bbb;
   border-width: 1px 0;
   padding: 20px;
-  margin-top: 3em;
   padding: 1rem calc(50% - 960px / 2);
 }
 
