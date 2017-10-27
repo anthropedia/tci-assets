@@ -38,6 +38,7 @@ header {
   display: grid;
   grid-template-columns: [logo] 2fr [menu] 1fr;
   width: 960px;
+  height: 100px;
   margin: 0 auto;
   align-content: center;
 }
